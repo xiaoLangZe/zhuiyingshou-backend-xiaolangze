@@ -1,16 +1,22 @@
 {
-	"compatibility_date": "2025-10-08",
-	"main": "src/index.ts",
-	"name": "zhuiyingshou-backend-xiaolangze",
-	"upload_source_maps": true,
-	"d1_databases": [
-		{
-			"binding": "DB",
-			"database_id": "9a3a848b-c5da-41bd-9e66-601e785ceeef",
-			"database_name": "userData"
-		}
-	],
-	"observability": {
-		"enabled": true
-	}
+  "compatibility_date": "2025-10-08",
+  "main": "src/index.ts",
+  "name": "zhuiyingshou-backend-xiaolangze",
+  "upload_source_maps": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_id": "9a3a848b-c5da-41bd-9e66-601e785ceeef",
+      "database_name": "userData"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV_CaptchaCode",
+      "id": "a7798595349a4ebdb63d9f75b36db8da"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
 }
