@@ -1,5 +1,5 @@
 import { requestZe, method, ReData } from "./httpRequests";
-import { setCache, getCache } from "./cache"
+import { setCache, getCache } from "../cache/cache"
 import { randomNum_6digit } from "./../tools"
 
 export function index(request: Request, env: Env, ctx: ExecutionContext): Response {

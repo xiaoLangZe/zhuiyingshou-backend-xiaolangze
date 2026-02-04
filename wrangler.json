@@ -1,8 +1,10 @@
 {
   "compatibility_date": "2025-10-08",
+  "compatibility_flags": ["nodejs_compat"],
   "main": "src/index.ts",
   "name": "zhuiyingshou-backend-xiaolangze",
   "upload_source_maps": true,
+
   "d1_databases": [
     {
       "binding": "DB",

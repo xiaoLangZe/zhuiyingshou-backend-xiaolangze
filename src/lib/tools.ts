@@ -25,3 +25,4 @@ export function randomNum_6digit() {
     crypto.getRandomValues(arr);
     return String(arr[0] % 1000000).padStart(6, "0");
 }
+
