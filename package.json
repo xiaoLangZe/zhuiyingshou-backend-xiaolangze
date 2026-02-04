@@ -29,6 +29,7 @@
 		"seedLocalD1": "wrangler d1 migrations apply DB --local"
 	},
 	"dependencies": {
-		"mimetext": "^3.0.28"
+		"mimetext": "^3.0.28",
+		"resend": "^6.9.1"
 	}
 }
