@@ -4,6 +4,9 @@
   "main": "src/index.ts",
   "name": "zhuiyingshou-backend-xiaolangze",
   "upload_source_maps": true,
+  "vars":{
+    "JWT_SECRET":"123"
+  },
   "d1_databases": [
     {
       "binding": "DB",

@@ -108,3 +108,7 @@ export async function login_checkCaptcha(request: Request, env: Env, ctx: Execut
 export function login_(request: Request, env: Env, ctx: ExecutionContext): Response {
     return requestHtml(200, request.method + " 200 ok")
 }
+
+export async function test(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    return requestJson(200, env.JWT_SECRET)
+}
