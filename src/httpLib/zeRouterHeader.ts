@@ -34,11 +34,11 @@ export async function login_sendCaptcha(request: Request, env: Env, ctx: Executi
     var value = await getCache("captcha", userId);
     if (value === null) {
         value = {
-            code: randomNum_6digit(),
-            type: data.type,
+            "code": randomNum_6digit(),
+            "type": String(data.type),
         }
         ctx.waitUntil(setCache("captcha", userId, value))
-        
+
     }
 
     console.log("value:", value);

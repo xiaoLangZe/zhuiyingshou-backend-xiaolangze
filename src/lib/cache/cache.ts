@@ -6,7 +6,7 @@ export async function setCache(database: string, key: string, value: any) {
     await caches.default.put(new Request(url), response);
 }
 
-export async function getCache(database: string, key: string): Promise<Object | null> {
+export async function getCache(database: string, key: string): Promise<Record<string, string> | null> {
     const url = `https://${database}/` + encodeURIComponent(key);
     const request = new Request(url);
     const response = await caches.default.match(request);
