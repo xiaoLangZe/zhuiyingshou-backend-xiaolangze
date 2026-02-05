@@ -11,7 +11,7 @@ export enum Method {
 
 export interface ReqData {
     code: number
-    message: string
+    msg: string
     data: Record<string, unknown>
 }
 
@@ -44,8 +44,8 @@ export class zeRouter {
     }
 }
 
-export function requestJson(code: number, message: string = "", data: Record<string, unknown> = {}) {
-    var reqData: ReqData = { code, message, data }
+export function requestJson(code: number, msg: string = "", data: Record<string, unknown> = {}) {
+    var reqData: ReqData = { code, msg, data }
     return new Response(JSON.stringify(reqData), {
         status: code,
         headers: { 'Content-Type': 'application/json; charset=utf-8' }
