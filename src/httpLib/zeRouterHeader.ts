@@ -38,6 +38,7 @@ export async function login_sendCaptcha(request: Request, env: Env, ctx: Executi
             type: data.type,
         }
         ctx.waitUntil(setCache("captcha", userId, value))
+        
     }
 
     console.log("value:", value);

@@ -9,6 +9,9 @@ http.HandleFunc("/login_checkCaptcha", login_checkCaptcha);
 
 export default {
   async fetch(request, env, ctx) {
+        // const jwtSecret = env.JWT_SECRET;
+        // console.log(jwtSecret);
+        
     return http.ServeHTTP(request, env, ctx);
   },
 } satisfies ExportedHandler<Env>;

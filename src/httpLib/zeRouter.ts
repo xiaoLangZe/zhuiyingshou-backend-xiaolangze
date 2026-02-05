@@ -38,7 +38,8 @@ export class zeRouter {
 
         const func = this.pathDict.get(decodedPath);
         if (!func) {
-            return requestHtml(404, "HTTP 404 Not Found: " + decodedPath)
+            return requestJson(404, "HTTP 404 Not Found: " + decodedPath)
+            // requestHtml(404, "HTTP 404 Not Found: " + decodedPath)
         }
         return func(request, env, ctx);
     }
