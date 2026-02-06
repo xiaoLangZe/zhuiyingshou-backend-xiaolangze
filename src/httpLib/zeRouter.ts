@@ -12,7 +12,7 @@ export enum Method {
 export interface ReqData {
     code: number
     msg: string
-    data: Record<string, unknown>
+    data: Record<string, unknown> | null
 }
 
 export class zeRouter {
@@ -45,7 +45,7 @@ export class zeRouter {
     }
 }
 
-export function requestJson(code: number, msg: string = "", data: Record<string, unknown> = {}) {
+export function requestJson(code: number, msg: string = "", data: Record<string, unknown> | null = null) {
     var reqData: ReqData = { code, msg, data }
     return new Response(JSON.stringify(reqData), {
         status: code,

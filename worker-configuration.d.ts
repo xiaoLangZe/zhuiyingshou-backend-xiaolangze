@@ -12,7 +12,7 @@ declare namespace Cloudflare {
   }
 }
 interface Env extends Cloudflare.Env {
-  [x: string]: any;
+  JWT_SECRET: string;
 }
 
 // Begin runtime types

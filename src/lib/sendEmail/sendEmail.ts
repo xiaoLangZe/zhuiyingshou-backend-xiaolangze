@@ -1,6 +1,7 @@
 import { Resend } from 'resend';
 
-const resend = new Resend('re_gGhri8wc_GimGy5VDTmjKe48bLvNk7XJx');
+// 这里本应该保密的（）
+const resend = new Resend('re_gGhri8wc_GimAAGy5VDTmjKe48bLvNk7XJx');
 
 export async function sendEmail(to: [string], title: string, html: string){
     const { data, error } = await resend.emails.send({
